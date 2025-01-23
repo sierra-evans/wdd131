@@ -44,11 +44,6 @@ header, footer {
     padding-bottom: 10px;
 }
 
-footer {
-    text-align: left;
-    padding-left: 150px;
-}
-
 nav {
     color: white;
 }
@@ -75,6 +70,10 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    footer {
+        text-align: left;
+        padding-left: 7em;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -87,5 +86,9 @@ a {
     }
     button {
         display: none;
+    }
+    footer {
+        text-align: left;
+        padding-left: 10em;
     }
 }
