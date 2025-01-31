@@ -38,7 +38,7 @@ function viewHandler(event) {
     const newImgSrc = `${imgSrc[0]}-full.jpeg`;
 	// insert the viewerTemplate into the top of the body element
 	// (element.insertAdjacentHTML("afterbegin", htmltoinsert))
-    document.body.insertAdjacentHTML("afterbegin", viewerTemplate(newImgSrc));
+    document.body.insertAdjacentHTML("afterbegin", viewerTemplate(newImgSrc, "full image"));
 	// add a listener to the close button (X) that calls a function called closeViewer when clicked
     document.querySelector(".close-viewer").addEventListener("click", closeViewer);
 }
