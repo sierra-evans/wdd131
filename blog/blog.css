@@ -60,13 +60,14 @@ main {
     margin-top: 10px;
 }
 
-.article1, .article2 {
+.article {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
+    padding: 15px;
 }
 
-.article1 .title, img, .description {
+.article .title, img, .description {
     grid-column: 2;
 }
 
@@ -74,10 +75,23 @@ main {
     grid-column: 1;
     grid-row: 1;
     font-size: 15px;
+    border-style: solid;
+    border-color: #EFC69B;
+    border-width: 2px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    text-align: right;
+    padding-right: 20px;
 }
 
-.article2 .title, img, .description {
-    grid-column: 2;
+.basic-info {
+    padding-left: 40px;
+}
+
+.basic-info img {
+    display: block;
+    margin: 0 auto;
 }
 
 .skiptocontent a {
