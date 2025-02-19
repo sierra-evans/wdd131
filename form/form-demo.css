@@ -31,7 +31,7 @@
   }
   
   .hide {
-    display: none; /* Initially hide the credit card input and label */
+    display: none;
   }
 
   label {

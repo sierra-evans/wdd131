@@ -70,10 +70,10 @@ function validateForm(event) {
         errors.push("Invalid Credit Card Number");
       }
     }
-    if (theForm.fullName.value !== "Bob") {
-      isValid = false;
-      errors.push("Your name is not Bob");
-    }
+    // if (theForm.fullName.value !== "Bob") {
+    //   isValid = false;
+    //   errors.push("Your name is not Bob");
+    // }
     // if we ran into any problems above valid will be false.
     if (!isValid) {
       //stop the form from being submitted
@@ -84,3 +84,6 @@ function validateForm(event) {
       return false;
     }
   }
+
+
+  
