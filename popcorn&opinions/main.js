@@ -123,7 +123,7 @@ function searchReviews(event) {
     if (filteredReviews.length > 0) {
         resultsContainer.innerHTML = filteredReviews.map(reviewTemplate).join('');
     } else {
-        resultsContainer.innerHTML = `<p class="no-results">There is nothing in the archive that matches your search.</p>`;
+        resultsContainer.innerHTML = `<p class="no_results">There is nothing in the archive that matches your search.</p>`;
     }
 }
 

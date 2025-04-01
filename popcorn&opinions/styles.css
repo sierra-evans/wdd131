@@ -192,6 +192,11 @@ form input {
     border-color: var(--secondary-color);
 }
 
+.no_results {
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+}
+
 @media (max-width: 1300px) {
     .logo {
         width: 400px;
@@ -307,7 +312,6 @@ form input {
 
     nav a {
         text-align: center;
-        font-size: px;
     }
 
     hr {
