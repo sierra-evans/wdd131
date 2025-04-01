@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
+
+:root {
+    /* Color palette link: https://coolors.co/044389-8acb88-759fbc-226f54-941c2f */
+    --primary-color: #759FBC;
+    --secondary-color: #8ACB88;
+    --accent1-color: #941C2F;
+    --accent2-color: #226F54;
+    --accent3-color: #044389;
+  
+    --heading-font: "Cinzel", Verdana;
+    --paragraph-font: "Exo 2", Helvetica, sans-serif;
+  
+    --headline-color-on-white: var(
+      --primary-color
+    ); 
+    --headline-color-on-color: white; 
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); 
+    --paragraph-color-on-color: white; 
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: white;
+    --nav-background-color: var(--accent2-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+}
+
+p, li {
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+hr {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--accent1-color);
+}
+
+.header-logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent2-color);
+    color: white;
+    gap: 2em;
+}
+
+nav a {
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+.site-title {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.about-me img {
+    width: 350px;
+    height: 250px;
+}
+
+.about-me p {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 30px;
+}
+
+.poster {
+    width: 350px;
+    height: 500px;
+}
+
+.review-basic {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    color: var(--accent3-color);
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-right: 50px;
+}
+
+.commentary {
+    padding-top: 65px;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;   
+    color: var(--accent1-color);
+    display: flex;
+    gap: 2em;
+    margin-top: 20px;
+    font-size: 25px;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+form {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    margin: 20px;
+    font-size: 30px;
+    font-family: var(--paragraph-font);
+}
+
+form button {
+    font-family: var(--paragraph-font);
+}
+
+form input {
+    font-family: var(--paragraph-font);
+    width: 270px;
+}
+
+.bottom-line {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--secondary-color);
+}
+
+@media (max-width: 1300px) {
+    .logo {
+        width: 400px;
+        height: 400px;
+    }
+
+    .header-title {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+
+    hr {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-title {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .about-me p {
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    .about-me img {
+        display: block;
+        width: 300px;
+        height: 250px;
+        margin: 10px auto; 
+    }
+
+    .reviews {
+        padding: 10px;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; 
+    }
+
+    .review-basic {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .review-info {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .commentary {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .tags {
+        font-size: 18px;
+        justify-content: center;
+    }        
+}
+
+@media (max-width: 655px) {
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        text-align: center;
+        font-size: px;
+    }
+
+    hr {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-title {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 23px;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .about-me p {
+        font-size: 15px;
+        padding: 0;
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    .about-me img {
+        display: block; 
+        width: 250px;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    .reviews {
+        padding: 10px;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        margin: 0 auto; 
+    }
+
+    .review-basic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster {
+        width: 300px;
+        height: 450px; 
+    }
+
+    .review-info {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .commentary {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .tags {
+        font-size: 18px;
+        justify-content: center; 
+    }
+}
+
